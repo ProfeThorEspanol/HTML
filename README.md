@@ -8,3 +8,11 @@ Tambien mostrarle el tipo de escritura tal como: Comentarios, etiquetas. Ademas,
 - Crear y/o mantener contenido en formato html
 - Definir un formato del contenido, asi como una estructura
 - Uso basico del DOM
+
+# Proyecto final
+
+Realizar un portafolio personal que contenga:
+- Información sobre el autor
+- Detalles de su experiencia
+- Exponer los proyectos en donde ha trabajado
+- Sección de contacto
