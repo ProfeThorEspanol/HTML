@@ -1,0 +1,196 @@
+<!-- Comentario de una sola linea -->
+
+
+<!--
+Este es un comentario de varias lineas
+Aqui hay otra parte del comentario
+-->
+
+<!DOCTYPE html> <!-- Le dice al navegador el tipo de lenguaje que se esta usando en el documento -->
+<html lang="es"> 
+    <!--
+        <html lang="es">
+        - Etiqueta de apertura
+        - atributo lang para establecer el lenguaje por defecto
+    -->
+    <head>
+        <meta charset="utf-8"> <!--Metadato que le informa al navegador el tipo de caracteres que debe usar-->
+        <!--
+            Metadatos
+            Apariencia
+            Acceibilidad a recursos
+        -->
+        <meta name="description" content="Es el portafolio de un ingeniero en sistemas el cual hace aplicaciones web, movil y de escritorio">
+        <meta name="keywords" content="ingeniero en sistemas, desarrollo web, desarrollo movil">
+        <!--Apariencia
+            Ejemplo de comentario en el documento html
+            <style>
+                body{
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1.6;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: rgb(22, 99, 151);
+                    background-color: #f4f4;
+                }
+            </style>
+        -->
+
+        <!--Acceder/Utilizar recursos externos-->
+        <link rel="stylesheet" href="./styles.css">
+        <!--
+            <script>
+                function sumar(a, b){
+                    return a + b
+                }
+    
+                console.log(sumar(5,8))
+            </script>
+            <script src="./script.js"></script>
+        -->
+
+        <title>Portafolio</title> 
+    </head>
+    <body>
+        <main>
+            <!--El main muestra el contenido principal de la pagina-->
+            <header> 
+                <!--
+                    Encabezado de la pagina que contiene una navegación.
+                    Sin embargo, no siempre es asi, pues puede ir también otro tipo de info como el logo de la empresa.
+                -->
+                <nav>
+                    <!--
+                        Navegacion siempre tiene la siguiente estructura:
+                        - nav -> ul -> li -> a
+                    -->
+                    <ul>
+                        <li>
+                            <a href="#portafolio">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#experiencia">Experiencía</a>
+                        </li>
+                        <li>
+                            <a href="#proyectos">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <h1 id="portafolio">Portafolio</h1> <!--H1 o encabezado principal no es el unico, hay 5 más que determinan la relevancía del texto y/o contenido-->
+            <p>Soy Thor tengo 23 años, soy una persona muy dedicada, autodidacta, empirico....etc</p>
+            <img src="./assets/ins-sis.jpeg" alt="Mi imagen personal">
+
+            <h1 id="experiencia">Experiencía</h1>
+            <ol>
+                <li>Google</li>
+                <li>Facebook</li>
+                <li>Open AI</li>
+            </ol>
+
+            <h1 id="proyectos">Proyectos</h1>
+            <section> <!--Determina una sección de un tipo o grupo de informaciones que se pueden agrupar, como en este caso los proyectos-->
+                <article><!--Envuelve toda la información de un proyecto-->
+                    <header><h2>Creador de Gemini</h2></header>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque porro tenetur quod dignissimos ab eveniet, atque dolore impedit reiciendis laudantium eligendi. Reiciendis in tempora eligendi itaque at. Quia, assumenda esse!</p>
+                    <footer>
+                        <a href="./gemini.html"><small>Puedes ver más contenido sobre Gemini haciendo click aquí</small></a>
+                    </footer>
+                </article>
+                <article>
+                    <header><h2>Creador de Llama</h2></header>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque porro tenetur quod dignissimos ab eveniet, atque dolore impedit reiciendis laudantium eligendi. Reiciendis in tempora eligendi itaque at. Quia, assumenda esse!</p>
+                    <footer>
+                        <span><small>Quieres ver más contenido sobre LLama?</small></span>
+                        <button id="boton-llama">Ver más</button>
+                    </footer>
+                </article>
+                <article>
+                    <header><h2>Creador de Chat-Gpt</h2></header>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque porro tenetur quod dignissimos ab eveniet, atque dolore impedit reiciendis laudantium eligendi. Reiciendis in tempora eligendi itaque at. Quia, assumenda esse!</p>
+                    <footer>
+                        <span><small>¿Quieres ver más contenido sobre Chat-Gpt?</small></span>
+                        <button id="boton-chat-gpt">Ver más</button>
+                    </footer>
+                </article>
+            </section>
+
+            <h1>Preguntas frecuentes</h1>
+            <section>
+                <details>
+                    <summary>¿Cúales son los idiomas que sé?</summary>
+                    <ul>
+                        <li>Español</li>
+                        <li>Ingles</li>
+                        <li>Portugues</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>¿Las especializaciones que he hecho?</summary>
+                    <ul>
+                        <li>Inteligencía atificial</li>
+                        <li>Matemática puera</li>
+                    </ul>
+                </details>
+            </section>
+
+            <div id="contacto">
+                <h1>Contacto</h1>
+                <form><!--Hacemo un formulario para que el usuario pueda contactarnos-->
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="text" placeholder="Apellido" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="¿En qué te gustaría que trabajemos?" ></textarea>
+                    <button>Enviar</button>
+                </form>
+            </div>
+
+            <!--Modales/Cuadros de dialogo-->
+
+            <!--Llama-->
+            <dialog id="dialogo-llama">
+                <form method="dialog">
+                    <h1>Cuadro de dialogo Llama</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis deleniti harum odit, laborum voluptate omnis cumque accusamus tempore velit optio totam nam minus, ducimus magnam magni odio molestiae deserunt quidem.</p>
+                    <menu>
+                        <button id="cerrar" type="reset">Cerrar</button>
+                    </menu>
+                </form>
+            </dialog>
+            
+            <!--Chat-gpt-->
+            <dialog id="dialogo-chat-gpt">
+                <form method="dialog">
+                    <h1>Cuadro de dialogo Chat-gpt</h1>
+                    <menu>
+                        <button id="cerrar" type="reset">Cerrar</button>
+                    </menu>
+                </form>
+            </dialog>
+
+        </main>
+        
+        <script>
+            function abrirDialogo(idVerMas, idDialogo){
+                const verMas = document.getElementById(idVerMas)
+                const dialogo = document.getElementById(idDialogo)
+                const cerrar = dialogo.querySelector("button[type='reset']")
+    
+                verMas.addEventListener("click", () => {
+                    dialogo.showModal()
+                })
+    
+                cerrar.addEventListener("click", () => {
+                    dialogo.close()
+                })
+            }
+
+            abrirDialogo('boton-llama', 'dialogo-llama')
+            abrirDialogo('boton-chat-gpt', 'dialogo-chat-gpt')
+        </script>
+        <footer></footer>
+    </body>
+</html> <!--Etiqueta de cierre-->
